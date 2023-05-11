@@ -2,7 +2,6 @@ package core_package;
 
 import java.util.*;
 import entities.BaseDados;
-import java.util.Scanner;
 
 public class main {
 	public static int n = 0;
