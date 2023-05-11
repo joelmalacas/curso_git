@@ -4,8 +4,10 @@ import entities.BaseDados;
 import java.util.Scanner;
 
 public class main {
+	public static int n = 0;
 	
 	public static void entry() {
+		Scanner sc = new Scanner(System.in);
 		System.out.print("> 0 Sair do Programa");
 		System.out.printf("\n> 1 Adicionar Funcionário");
 		System.out.printf("\n> 2 Adicionar Salário a um Funcionário");
@@ -14,42 +16,20 @@ public class main {
 		System.out.printf("\n> 5  Inserir Informações Disponíveis para Funcionários");
 		System.out.printf("\n> 6 Consultar Lista de Formações Disponíveis para Funcionários");
 		System.out.printf("\n\nIntroduza a opção pretendida > ");
+		n = sc.nextInt();
+		if(n > 6 || n < 0) {
+			System.out.printf("\n\nNÚMERO INVÁLIDO\n\n");
+		} 
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		entry();
-		while (n == 1) {  //ADD Funcionario
-			
-		}
-		
-		while (n == 2) { //ADD SALARIO
-			
-		}
-		
-		while (n == 3) { //Aumentar SALARIO 
-			
-		}
-		
-		while (n == 4) { // CONSULTA LISTA
-			
-		}
-		
-		while (n == 5) { // INSERIR INFO FUNCIONARIOS
-			
-		}
-		
-		while (n == 6) { //CONSULTA LISTA FORMACOES DISPONIVEIS
-			
-		}
-		
-		while (n == 0) {
+		do {
+			entry();
+		} while (n != 0);
+		if (n == 0) {
+			System.out.printf("\nSair do Programa");
 			System.exit(0);
-		}
-		
-		sc.close();
+		}		
 	}
 
 }
