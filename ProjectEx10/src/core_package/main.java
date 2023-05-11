@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class main {
 	public static int n = 0;
+	public static Scanner sc = new Scanner(System.in);
 
 	public static void entry() {
-		Scanner sc = new Scanner(System.in);
 		System.out.print("> 0 Sair do Programa");
 		System.out.printf("\n> 1 Adicionar Funcionário");
 		System.out.printf("\n> 2 Adicionar Salário a um Funcionário");
@@ -21,7 +21,6 @@ public class main {
 		if (n > 6 || n < 0) {
 			System.out.printf("\n\nNÚMERO INVÁLIDO\n\n");
 		}
-		sc.close();
 	}
 
 	public static void main(String[] args) {
@@ -31,6 +30,7 @@ public class main {
 		if (n == 0) {
 			System.out.printf("\nSair do Programa");
 			System.exit(0);
+			sc.close();
 		}
 	}
 
