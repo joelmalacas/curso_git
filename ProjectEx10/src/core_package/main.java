@@ -21,6 +21,7 @@ public class main {
 		if (n > 6 || n < 0) {
 			System.out.printf("\n\nNÚMERO INVÁLIDO\n\n");
 		}
+		sc.close();
 	}
 
 	public static void main(String[] args) {
