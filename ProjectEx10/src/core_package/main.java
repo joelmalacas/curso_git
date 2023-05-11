@@ -25,6 +25,15 @@ public class main {
 	public static void main(String[] args) {
 		do {
 			entry();
+			List<BaseDados> list = new ArrayList<>();
+			switch (n) {
+				case 1:
+                    System.out.print("Adicionar o nome do funcionário: ");
+					sc.nextLine();
+					String Nome = sc.nextLine();
+					list.add(new BaseDados(null, Nome, Nome, null, null, null, null));
+					entry();
+			}
 		} while (n != 0);
 		if (n == 0) {
 			System.out.printf("\nSair do Programa");
