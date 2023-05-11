@@ -1,11 +1,12 @@
 package core_package;
+
 import java.util.*;
 import entities.BaseDados;
 import java.util.Scanner;
 
 public class main {
 	public static int n = 0;
-	
+
 	public static void entry() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("> 0 Sair do Programa");
@@ -17,9 +18,9 @@ public class main {
 		System.out.printf("\n> 6 Consultar Lista de Formações Disponíveis para Funcionários");
 		System.out.printf("\n\nIntroduza a opção pretendida > ");
 		n = sc.nextInt();
-		if(n > 6 || n < 0) {
+		if (n > 6 || n < 0) {
 			System.out.printf("\n\nNÚMERO INVÁLIDO\n\n");
-		} 
+		}
 	}
 
 	public static void main(String[] args) {
@@ -29,7 +30,7 @@ public class main {
 		if (n == 0) {
 			System.out.printf("\nSair do Programa");
 			System.exit(0);
-		}		
+		}
 	}
 
 }
